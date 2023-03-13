@@ -3,10 +3,13 @@ import React from "react";
 export default function PostDetail({ post }) {
   return (
     <>
-      <h1>
-        {post.id} {post.title}
-      </h1>
-      <p>{post.body}</p>
+      <div className="container">
+        <h1 style={{ color: 'green' }}>
+          {post.id}. {`${post.title}`.toUpperCase()}
+        </h1>
+        <p>{post.body}</p>
+      </div>
+
     </>
   );
 }
